@@ -5,6 +5,9 @@ A plugin that adds ESLint globals for nuxt3 auto imported functions.
 ## Introduction
 In [nuxt@3.0.0-rc.4](https://github.com/nuxt/framework/tree/v3.0.0-rc.4), nuxt would [auto import](https://v3.nuxtjs.org/guide/concepts/auto-imports/) helper functions, composables and Vue APIs to use across your application without explicitly importing them. However, we need to add globals to the configuration file in order to avoid the ESLint [no-undef](https://eslint.org/docs/latest/rules/no-undef) rule.
 
+
+This is a fork from [this repo](https://github.com/LuckyWindsck/eslint-plugin-nuxt3-auto-import). This forks just adds support to [Nuxt SEO plugin](https://www.nuxtseo.com/).
+
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
@@ -16,13 +19,13 @@ npm i eslint --save-dev
 Next, install `eslint-plugin-nuxt3-auto-import` by using the url (since I didn't publish this plugin):
 
 ```sh
-npm install --save-dev git+https://github.com/LuckyWindsck/eslint-plugin-nuxt3-auto-import.git
+npm install --save-dev git+https://github.com/Alejandroacho/eslint-plugin-nuxt3-auto-import.git
 ```
 
 Or if you prefer using ssh:
 
 ```sh
-npm install --save-dev git+ssh://git@github.com/LuckyWindsck/eslint-plugin-nuxt3-auto-import.git
+npm install --save-dev git+ssh://git@github.com/Alejandroacho/eslint-plugin-nuxt3-auto-import.git
 ```
 
 ## Usage
